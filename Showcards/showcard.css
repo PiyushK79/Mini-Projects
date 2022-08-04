@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #d360fc ,#5549f7 );
+    min-height: 100vh;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.card{
+    /* background: #fff; */
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    background: #fff;
+    /* overflow: hidden; */
+
+}
+/* .card:hover{
+    background: #fff;
+    width: 600px;
+    height: 350px;
+    transition: 0.5s;
+} */
+
+.image img{
+    display: block;
+    /* float: left; */
+    position: relative;
+    margin: 40px;
+    /* margin-top: 40px; */
+    margin-right: 20px;
+    height: 280px;
+    width: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 0px 15px rgb(114, 113, 113);
+    /* transform: translateY(80px); */
+    transform: translateX(-80px);
+}
+/* img:hover{
+    height: 270px;
+    width: 270px;
+    transition: 0.5s;
+} */
+
+.card .content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    transform: translateX(-50px);
+    /* font-size: 1.25em; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+.content .date{
+    color: gray;
+    font-weight:normal;
+}
+.content .heading{
+    color: rgb(0, 0, 0);
+    font-weight:700;
+    font-size: 1.75em;
+}
+
+.content .read{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    border-radius: 20px;
+    border: 0px;
+    padding: 10px;
+    width: 60%;
+    color: #fff;
+    background: linear-gradient(to right, #d360fc ,#5549f7 );
+    box-shadow: 5px 5px 15px rgb(106, 106, 106);
+    cursor: pointer;
+    transition: 1.3s ease-out;
+}
+
+#threebtn{
+     /* background: red; */
+     /* position: relative; */
+     display: flex;
+     flex-direction: column;
+     /* float:right; */
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     padding: 10px;
+     overflow: hidden;
+     /* opacity: 0; */
+}
+/* .card #threebtn:hover{
+    opacity: 1;
+    transition: 0.5s;
+} */
+
+.btn1, .btn2{
+    content:'';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 0px;
+    background: gray;
+    overflow: hidden;
+}
+.btn3{
+    content:'';
+    width: 10px;
+    height: 30px;
+    border-radius:20px;
+    border: 0px;
+    background: linear-gradient(to bottom right,#5549f7,#d360fc);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* .geometry img{
+    /* rotate: 270deg; */
+    /* rotate: y 0.25turn;
+    rotate: z 1.57rad; */
+    /* transform: translateX(150px);
+    /* rotate: revert; */
+    /* width: 300px; */
+    /* height: 300px; */
+
